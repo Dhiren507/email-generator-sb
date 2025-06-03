@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["openjdk17"]
+nixPkgs = ["maven", "openjdk17"]
 
 [phases.build]
-cmds = ["./mvnw clean package -DskipTests"]
+cmds = ["mvn clean package -DskipTests -q"]
 
 [start]
 cmd = "java -jar target/email-generator-sb-0.0.1-SNAPSHOT.jar"
