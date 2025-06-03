@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/email")
-@CrossOrigin(origins = {"http://localhost:5173", "https://emailreplygenratorr.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:5173", "https://emailreplygeneratorr.netlify.app"})
 public class EmailGeneratorController {
 
     private final EmailGeneratorService emailGeneratorService;
